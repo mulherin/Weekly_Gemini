@@ -1,7 +1,7 @@
 # ===========================
 # OpenAI / Model
 # ===========================
-api_key: "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"
+api_key: "x"
 model: gpt-5
 # One global cap used by all passes; safe under GPT‑5 output max (128k)
 max_output_tokens: 100000
@@ -167,4 +167,5 @@ debug_dir: ./output/debug
 # For focused tests
 restrict_universe_to_debug_trace: false
 debug_trace_tickers: ["SHW"]
+
 write_conflicts_page: false
