@@ -1,0 +1,798 @@
+{
+  "industry_to_end_markets": {
+    "Agriculture": {
+      "Agriculture | Agriculture Equipment": [
+        {
+          "ticker": "AGCO",
+          "weight": 1.0
+        },
+        {
+          "ticker": "DE",
+          "weight": 1.0
+        }
+      ],
+      "Agriculture | Agriculture Processing": [
+        {
+          "ticker": "ADM",
+          "weight": 1.0
+        }
+      ],
+      "Agriculture | Seeds & Crop Protection": [
+        {
+          "ticker": "CTVA",
+          "weight": 1.0
+        }
+      ]
+    },
+    "Chemicals": {
+      "Chemicals | Industrial Gases": [
+        {
+          "ticker": "APD",
+          "weight": 1.0
+        },
+        {
+          "ticker": "LIN",
+          "weight": 1.0
+        }
+      ],
+      "Chemicals | Lithium": [
+        {
+          "ticker": "ALB",
+          "weight": 1.0
+        }
+      ],
+      "Chemicals | Performance Chemicals": [
+        {
+          "ticker": "CC",
+          "weight": 1.0
+        },
+        {
+          "ticker": "DD",
+          "weight": 1.0
+        }
+      ]
+    },
+    "Coatings": {
+      "Coatings | Architectural DIY": [
+        {
+          "ticker": "MAS",
+          "weight": 0.35
+        },
+        {
+          "ticker": "RPM",
+          "weight": 0.3
+        },
+        {
+          "ticker": "SHW",
+          "weight": 0.2
+        }
+      ],
+      "Coatings | Architectural Professional": [
+        {
+          "ticker": "SHW",
+          "weight": 0.5
+        },
+        {
+          "ticker": "MAS",
+          "weight": 0.15
+        },
+        {
+          "ticker": "PPG",
+          "weight": 0.15
+        }
+      ],
+      "Coatings | Automotive OEM": [
+        {
+          "ticker": "PPG",
+          "weight": 0.25
+        },
+        {
+          "ticker": "AXTA",
+          "weight": 0.2
+        }
+      ],
+      "Coatings | Automotive Refinish": [
+        {
+          "ticker": "AXTA",
+          "weight": 0.5
+        },
+        {
+          "ticker": "PPG",
+          "weight": 0.2
+        }
+      ],
+      "Coatings | Industrial & Protective": [
+        {
+          "ticker": "RPM",
+          "weight": 0.4
+        },
+        {
+          "ticker": "AXTA",
+          "weight": 0.3
+        },
+        {
+          "ticker": "PPG",
+          "weight": 0.3
+        },
+        {
+          "ticker": "CSL",
+          "weight": 0.05
+        }
+      ],
+      "Coatings | Non‑Residential": [
+        {
+          "ticker": "SHW",
+          "weight": 0.3
+        },
+        {
+          "ticker": "PPG",
+          "weight": 0.1
+        }
+      ]
+    },
+    "Commercial Aero": {
+      "Commercial Aero | Aero OEM": [
+        {
+          "ticker": "HWM",
+          "weight": 0.9
+        },
+        {
+          "ticker": "CRS",
+          "weight": 0.8
+        },
+        {
+          "ticker": "ATI",
+          "weight": 0.75
+        },
+        {
+          "ticker": "WWD",
+          "weight": 0.7
+        },
+        {
+          "ticker": "GE",
+          "weight": 0.6
+        },
+        {
+          "ticker": "CR",
+          "weight": 0.4
+        },
+        {
+          "ticker": "TXT",
+          "weight": 0.4
+        },
+        {
+          "ticker": "RBC",
+          "weight": 0.3
+        },
+        {
+          "ticker": "PH",
+          "weight": 0.2
+        },
+        {
+          "ticker": "CSL",
+          "weight": 0.1
+        },
+        {
+          "ticker": "ETN",
+          "weight": 0.1
+        }
+      ],
+      "Commercial Aero | Aftermarket": [
+        {
+          "ticker": "TDG",
+          "weight": 1.0
+        },
+        {
+          "ticker": "GE",
+          "weight": 0.4
+        },
+        {
+          "ticker": "HON",
+          "weight": 0.31
+        },
+        {
+          "ticker": "HWM",
+          "weight": 0.1
+        }
+      ]
+    },
+    "Construction Materials": {
+      "Construction Materials | Aggregates": [
+        {
+          "ticker": "MLM",
+          "weight": 0.8
+        },
+        {
+          "ticker": "VMC",
+          "weight": 0.75
+        }
+      ],
+      "Construction Materials | Cement & Other": [
+        {
+          "ticker": "EXP",
+          "weight": 1.0
+        },
+        {
+          "ticker": "VMC",
+          "weight": 0.25
+        },
+        {
+          "ticker": "MLM",
+          "weight": 0.2
+        }
+      ]
+    },
+    "Defense": {
+      "Defense | Defense OEM": [
+        {
+          "ticker": "AVAV",
+          "weight": 1.0
+        },
+        {
+          "ticker": "CW",
+          "weight": 0.6
+        },
+        {
+          "ticker": "TXT",
+          "weight": 0.6
+        },
+        {
+          "ticker": "ATI",
+          "weight": 0.25
+        },
+        {
+          "ticker": "CRS",
+          "weight": 0.2
+        }
+      ]
+    },
+    "Distribution": {
+      "Distribution | Building Products": [
+        {
+          "ticker": "BLDR",
+          "weight": 1.0
+        },
+        {
+          "ticker": "POOL",
+          "weight": 1.0
+        },
+        {
+          "ticker": "QXO",
+          "weight": 1.0
+        }
+      ],
+      "Distribution | Electrical": [
+        {
+          "ticker": "WCC",
+          "weight": 1.0
+        }
+      ],
+      "Distribution | MRO & Safety": [
+        {
+          "ticker": "AIT",
+          "weight": 1.0
+        },
+        {
+          "ticker": "FAST",
+          "weight": 1.0
+        },
+        {
+          "ticker": "GWW",
+          "weight": 1.0
+        }
+      ],
+      "Distribution | Plumbing & HVAC": [
+        {
+          "ticker": "FERG",
+          "weight": 1.0
+        }
+      ],
+      "Distribution | Waterworks": [
+        {
+          "ticker": "CNM",
+          "weight": 1.0
+        }
+      ]
+    },
+    "Electrical & Power": {
+      "Electrical & Power | Backup Power": [
+        {
+          "ticker": "GNRC",
+          "weight": 1.0
+        },
+        { "ticker": "CAT",
+          "weight": 0.20
+        },
+        { "ticker": "CMI",
+          "weight": 0.25
+        }
+      ],
+      "Electrical & Power | Datacenter Electrical & Power Distribution": [
+        {
+          "ticker": "VRT",
+          "weight": 0.5
+        },
+        {
+          "ticker": "ETN",
+          "weight": 0.3
+        },
+        {
+          "ticker": "NVT",
+          "weight": 0.25
+        }
+      ],
+      "Electrical & Power | Datacenter Thermal Management": [
+        {
+          "ticker": "MOD",
+          "weight": 0.85
+        },
+        {
+          "ticker": "VRT",
+          "weight": 0.5
+        },
+        {
+          "ticker": "NVT",
+          "weight": 0.1
+        }
+      ],
+      "Electrical & Power | Infrastructure Construction": [
+        {
+          "ticker": "EME",
+          "weight": 1.0
+        },
+        {
+          "ticker": "FIX",
+          "weight": 1.0
+        },
+        {
+          "ticker": "PRIM",
+          "weight": 1.0
+        },
+        {
+          "ticker": "PWR",
+          "weight": 1.0
+        },
+        {
+          "ticker": "STRL",
+          "weight": 1.0
+        },
+        {
+          "ticker": "ETN",
+          "weight": 0.1
+        }
+      ],
+      "Electrical & Power | Non‑Datacenter Electrical Components": [
+        {
+          "ticker": "HUBB",
+          "weight": 1.0
+        },
+        {
+          "ticker": "NVT",
+          "weight": 0.65
+        },
+        {
+          "ticker": "ETN",
+          "weight": 0.5
+        },
+        {
+          "ticker": "MOD",
+          "weight": 0.15
+        }
+      ],
+      "Electrical & Power | Nuclear": [
+        {
+          "ticker": "BWXT",
+          "weight": 1.0
+        },
+        {
+          "ticker": "CCJ",
+          "weight": 1.0
+        },
+        {
+          "ticker": "LEU",
+          "weight": 1.0
+        },
+        {
+          "ticker": "MIR",
+          "weight": 1.0
+        },
+        {
+          "ticker": "OKLO",
+          "weight": 1.0
+        },
+        {
+          "ticker": "SMR",
+          "weight": 1.0
+        },
+        {
+          "ticker": "CW",
+          "weight": 0.4
+        }
+      ],
+      "Electrical & Power | Power Generation": [
+        {
+          "ticker": "BE",
+          "weight": 1.0
+        },
+        {
+          "ticker": "GEV",
+          "weight": 1.0
+        },
+        {
+          "ticker": "CAT",
+          "weight": 0.20
+        },
+        {
+          "ticker": "CMI",
+          "weight": 0.35
+        },
+        {
+          "ticker": "WWD",
+          "weight": 0.3
+        }
+      ]
+    },
+    "HVAC": {
+      "HVAC | Commercial HVAC": [
+        {
+          "ticker": "JCI",
+          "weight": 1.0
+        },
+        {
+          "ticker": "TT",
+          "weight": 0.8
+        },
+        {
+          "ticker": "CARR",
+          "weight": 0.35
+        },
+        {
+          "ticker": "LII",
+          "weight": 0.3
+        }
+      ],
+      "HVAC | Residential HVAC": [
+        {
+          "ticker": "LII",
+          "weight": 0.7
+        },
+        {
+          "ticker": "CARR",
+          "weight": 0.65
+        },
+        {
+          "ticker": "RRX",
+          "weight": 0.2
+        },
+        {
+          "ticker": "TT",
+          "weight": 0.2
+        }
+      ]
+    },
+    "Industrial": {
+      "Industrial | Automation": [
+        {
+          "ticker": "ROK",
+          "weight": 1.0
+        },
+        {
+          "ticker": "FTV",
+          "weight": 0.3
+        },
+        {
+          "ticker": "HON",
+          "weight": 0.28
+        },
+        {
+          "ticker": "DOV",
+          "weight": 0.2
+        }
+      ],
+      "Industrial | Fluid Handling": [
+        {
+          "ticker": "FLS",
+          "weight": 1.0
+        },
+        {
+          "ticker": "CR",
+          "weight": 0.6
+        },
+        {
+          "ticker": "DOV",
+          "weight": 0.4
+        },
+        {
+          "ticker": "GTES",
+          "weight": 0.3
+        },
+        {
+          "ticker": "IR",
+          "weight": 0.2
+        },
+        {
+          "ticker": "PH",
+          "weight": 0.2
+        }
+      ],
+      "Industrial | Motion & Power": [
+        {
+          "ticker": "IR",
+          "weight": 0.8
+        },
+        {
+          "ticker": "PH",
+          "weight": 0.6
+        },
+        {
+          "ticker": "AME",
+          "weight": 0.33
+        },
+        {
+          "ticker": "DOV",
+          "weight": 0.3
+        },
+        {
+          "ticker": "CAT",
+          "weight": 0.6
+        },
+        {
+          "ticker": "CMI",
+          "weight": 0.4
+        },
+        {
+          "ticker": "RRX",
+          "weight": 0.25
+        }
+      ],
+      "Industrial | Power Transmission": [
+        {
+          "ticker": "GTES",
+          "weight": 0.7
+        },
+        {
+          "ticker": "RBC",
+          "weight": 0.7
+        },
+        {
+          "ticker": "RRX",
+          "weight": 0.55
+        }
+      ],
+      "Industrial | Test & Measurement": [
+        {
+          "ticker": "FTV",
+          "weight": 0.7
+        },
+        {
+          "ticker": "AME",
+          "weight": 0.67
+        },
+        {
+          "ticker": "VLTO",
+          "weight": 0.4
+        },
+        {
+          "ticker": "HON",
+          "weight": 0.19
+        },
+        {
+          "ticker": "DOV",
+          "weight": 0.1
+        }
+      ]
+    },
+    "Ingredients": {
+      "Ingredients | Flavors & Fragrances": [
+        {
+          "ticker": "IFF",
+          "weight": 1.0
+        }
+      ],
+      "Ingredients | Starches, Sweeteners & Texturizers": [
+        {
+          "ticker": "INGR",
+          "weight": 1.0
+        }
+      ]
+    },
+    "Non‑Residential": {
+      "Non‑Residential | Elevators": [
+        {
+          "ticker": "OTIS",
+          "weight": 1.0
+        }
+      ],
+      "Non‑Residential | Lighting": [
+        {
+          "ticker": "AYI",
+          "weight": 1.0
+        }
+      ],
+      "Non‑Residential | Locks & Security": [
+        {
+          "ticker": "ALLE",
+          "weight": 1.0
+        },
+        {
+          "ticker": "HON",
+          "weight": 0.22
+        }
+      ],
+      "Non‑Residential | Roofing & Building Envelope": [
+        {
+          "ticker": "CSL",
+          "weight": 0.85
+        },
+        {
+          "ticker": "RPM",
+          "weight": 0.3
+        },
+        {
+          "ticker": "BLD",
+          "weight": 0.2
+        }
+      ],
+      "Non‑Residential | Water & Flow Control": [
+        {
+          "ticker": "XYL",
+          "weight": 1.0
+        },
+        {
+          "ticker": "VLTO",
+          "weight": 0.6
+        },
+        {
+          "ticker": "PNR",
+          "weight": 0.5
+        }
+      ]
+    },
+    "Packaging": {
+      "Packaging | Corrugated Boxes & Paperboard": [
+        {
+          "ticker": "IP",
+          "weight": 1.0
+        },
+        {
+          "ticker": "PKG",
+          "weight": 1.0
+        },
+        {
+          "ticker": "SW",
+          "weight": 1.0
+        }
+      ],
+      "Packaging | Food & Beverage Packaging": [
+        {
+          "ticker": "AMCR",
+          "weight": 1.0
+        },
+        {
+          "ticker": "AVY",
+          "weight": 1.0
+        },
+        {
+          "ticker": "BALL",
+          "weight": 1.0
+        },
+        {
+          "ticker": "CCK",
+          "weight": 1.0
+        },
+        {
+          "ticker": "GPK",
+          "weight": 1.0
+        }
+      ]
+    },
+    "Residential": {
+      "Residential | Flooring": [
+        {
+          "ticker": "MHK",
+          "weight": 1.0
+        }
+      ],
+      "Residential | Insulation": [
+        {
+          "ticker": "BLD",
+          "weight": 0.8
+        },
+        {
+          "ticker": "OC",
+          "weight": 0.4
+        }
+      ],
+      "Residential | New Construction": [
+        {
+          "ticker": "DHI",
+          "weight": 1.0
+        }
+      ],
+      "Residential | Outdoor Living": [
+        {
+          "ticker": "TREX",
+          "weight": 1.0
+        },
+        {
+          "ticker": "FBIN",
+          "weight": 0.5
+        },
+        {
+          "ticker": "PNR",
+          "weight": 0.5
+        },
+        {
+          "ticker": "JHX",
+          "weight": 0.4
+        }
+      ],
+      "Residential | Plumbing": [
+        {
+          "ticker": "FBIN",
+          "weight": 0.5
+        },
+        {
+          "ticker": "MAS",
+          "weight": 0.5
+        }
+      ],
+      "Residential | Roofing & Siding": [
+        {
+          "ticker": "OC",
+          "weight": 0.6
+        }
+      ],
+      "Residential | Siding": [
+        {
+          "ticker": "JHX",
+          "weight": 0.6
+        }
+      ],
+      "Residential | Tools": [
+        {
+          "ticker": "SWK",
+          "weight": 1.0
+        }
+      ],
+      "Residential | Water Heaters": [
+        {
+          "ticker": "AOS",
+          "weight": 1.0
+        }
+      ]
+    },
+    "Services": {
+      "Services | Consulting & Engineering": [
+        {
+          "ticker": "TTEK",
+          "weight": 1.0
+        }
+      ],
+      "Services | Other Industrial Services": [
+        {
+          "ticker": "ECL",
+          "weight": 1.0
+        }
+      ],
+      "Services | Waste": [
+        {
+          "ticker": "CLH",
+          "weight": 1.0
+        },
+        {
+          "ticker": "RSG",
+          "weight": 1.0
+        },
+        {
+          "ticker": "WCN",
+          "weight": 1.0
+        },
+        {
+          "ticker": "WM",
+          "weight": 1.0
+        }
+      ]
+    }
+  }
+}

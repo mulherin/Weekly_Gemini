@@ -1,0 +1,170 @@
+# ===========================
+# OpenAI / Model
+# ===========================
+api_key: "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"
+model: gpt-5
+# One global cap used by all passes; safe under GPT‑5 output max (128k)
+max_output_tokens: 100000
+reasoning_effort: high
+text_verbosity: low
+llm_concurrency: 4
+
+# ===========================
+# Run date ("" = today)
+# ===========================
+run_date: ""
+
+# ===========================
+# Required paths (keep yours)
+# ===========================
+input_jsonl_dir: C:\Users\TaylorMulherin\Documents\AtomicData\AtomicData_Script\Output_JSONL
+valuation_file:  C:\Users\TaylorMulherin\Documents\Valuation\Valuation_Output.xlsx
+configs_dir:     C:\Users\TaylorMulherin\Documents\Weekly\Weekly_Script\configs
+output_dir:      C:\Users\TaylorMulherin\Documents\Weekly\Weekly_Scores
+markdown_output_dir: 'C:\Users\TaylorMulherin\Documents\OBSIDIAN_N2_VAULT\05 - REVIEWS'
+
+# ===========================
+# Universe & matching
+# ===========================
+restrict_universe_to_ticker_master: true
+abort_on_universe_leak: true                   # new: make any leak a hard error
+ticker_master_path: C:\Users\TaylorMulherin\Documents\Weekly\Weekly_Script\configs\ticker_master.json
+require_exact_ticker_match: true
+allow_industry_alias_routing: true
+end_market_aliases_path: C:\Users\TaylorMulherin\Documents\Weekly\Weekly_Script\configs\end_market_aliases.json
+company_descriptions_path: C:\Users\TaylorMulherin\Documents\Weekly\Weekly_Script\configs\company_descriptions.json
+common_names_path:        C:\Users\TaylorMulherin\Documents\Weekly\Weekly_Script\configs\common_names.json
+company_endmarket_exposure_path: C:\Users\TaylorMulherin\Documents\Weekly\Weekly_Script\configs\company_endmarket_exposure.json
+industry_to_tickers_path: C:\Users\TaylorMulherin\Documents\Weekly\Weekly_Script\configs\industry_to_tickers.json
+content_filters_path:     C:\Users\TaylorMulherin\Documents\Weekly\Weekly_Script\configs\content_filters.json
+content_filter_keywords_csv: C:\Users\TaylorMulherin\Documents\Weekly\Weekly_Script\configs\content_filter_keywords.csv
+
+# ===========================
+# Windows (keep your intent)
+# ===========================
+flow_window_days: 21
+stock_window_days: 90
+
+# ===========================
+# Token budgeting
+# ===========================
+# Use a slightly conservative estimator; JSON inflates chars.
+approx_chars_per_token: 3
+# Leave ~12k cushion under 272k max input for wrappers/variance
+max_input_tokens_storyscore: 260000
+max_input_tokens_softdata:   260000
+
+# ===========================
+# Per-call sizing / batching
+# ===========================
+# CRITICAL: keep compute passes single-ticker so each can see all ~200 items
+tickers_per_call_softdata_compute: 1
+# Stock write can be 1–2 if paragraphs + trimmed items remain under 260k
+tickers_per_call_storyscore_write: 2
+
+# (Optional; ignored by older code, used by updated llm.py)
+tickers_per_call_storyscore_compute: 1
+tickers_per_call_softdata_write: 2
+
+# ===========================
+# Digest sizes (what the LLM actually sees)
+# ===========================
+# --- Stage-specific output budgets ---
+max_output_tokens_storyscore: 9000
+max_output_tokens_storyscore_write: 6000
+max_output_tokens_softdata: 12000
+max_output_tokens_softdata_write: 3500
+max_output_tokens_endmarket_stock: 4000
+max_output_tokens_endmarket_flow: 4000
+max_output_tokens_exec_summary: 5500
+
+# Flow (ticker) — make the floor equal to the ceiling so budgeters don't ratchet you down
+min_items_per_ticker_flow_digest: 50
+max_items_per_ticker_flow_digest: 120
+
+# Stock (ticker)
+max_items_per_ticker_stock_digest: 200
+
+# End‑market (used for theme/parent/child sections)
+max_items_per_endmarket_stock_digest: 200
+max_items_per_endmarket_flow_digest:  200
+
+# Per‑note cap — effectively “off” so ranking decides, not gating
+max_items_per_note: 1000
+
+# ===========================
+# Evidence trimming
+# ===========================
+# The “evidence” field is the key datapoint. Keep it readable but bounded.
+evidence_chars_per_item: 1200
+
+# ===========================
+# Expectation tilt thresholds
+# ===========================
+tilt_high_pct: 80
+tilt_low_pct:  20
+
+# ===========================
+# Scoring / summary behavior
+# ===========================
+story_sign_deadband: 0.33
+
+# ===========================
+# Importance weights / ranking (no gates)
+# ===========================
+# Selection-time knobs
+select_use_date_tiebreak: false                # was implicitly true in code
+softdata_rebalance_latest_first: false         # was implicitly true in code
+endmarket_sort_by_date_desc: true              # keep true unless summaries skew too hard to "today"
+
+# Importance weights – explicit and complete
+importance_weights:
+  recency_halflife_days: 42                    # was implicitly 28 when missing
+  near_term_timeframe_boost: 1.00              # keep neutral for now
+
+importance_weights:
+  recency_gain: 1.00
+  specificity_gain:
+    company: 1.00
+  kind:
+    channel_signal:   1.10
+    endmarket_signal: 0.90
+    key_comment:      1.00
+
+  minor_exposure_floor_pct: 15
+  core_mechanism_boost: 1.15
+  negative_admission_boost: 1.10
+  alignment_gain: 0.20
+
+  stock_window_days: 120              # widen stock context (LLM input)
+  flow_window_days: 60                # keep flow tighter if you like
+  stock_window_coast_days: 21         # NEW: soft edge ~3 weeks
+  flow_window_coast_days: 7           # NEW: soft edge ~1 week
+
+  # REMOVE source-share gating; let ranking pick best items
+  max_per_source_share: 0.50
+
+  # Gentle de-weighting only for huge multi-ticker notes
+  multi_ticker_penalty_mode: sqrt
+  large_multi_ticker_penalty_N: 6
+  large_multi_ticker_penalty_factor: 0.75
+
+  # Do not penalize title variance; we enforce literal title tags downstream
+  title_anchor_penalty_factor: 1.00
+
+# ===========================
+# Debug controls
+# ===========================
+write_conflicts_page: false
+softdata_write_improve_wording: true
+
+debug_enabled: false
+debug_save_payloads: false
+debug_save_per_ticker_bundles: false
+debug_save_tables_csv: false
+debug_dir: ./output/debug
+
+# For focused tests
+restrict_universe_to_debug_trace: false
+debug_trace_tickers: ["SHW"]
+write_conflicts_page: false

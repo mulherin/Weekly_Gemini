@@ -1,0 +1,407 @@
+{
+  "Agriculture": {
+    "ADM": {
+      "Agriculture | Agriculture Processing": 1.0
+    },
+    "AGCO": {
+      "Agriculture | Agriculture Equipment": 1.0
+    },
+    "CTVA": {
+      "Agriculture | Seeds & Crop Protection": 1.0
+    },
+    "DE": {
+      "Agriculture | Agriculture Equipment": 1.0
+    }
+  },
+  "Chemicals": {
+    "ALB": {
+      "Chemicals | Lithium": 1.0
+    },
+    "APD": {
+      "Chemicals | Industrial Gases": 1.0
+    },
+    "CC": {
+      "Chemicals | Performance Chemicals": 1.0
+    },
+    "DD": {
+      "Chemicals | Performance Chemicals": 1.0
+    },
+    "LIN": {
+      "Chemicals | Industrial Gases": 1.0
+    }
+  },
+  "Coatings": {
+    "AXTA": {
+      "Coatings | Automotive OEM": 0.2,
+      "Coatings | Automotive Refinish": 0.5,
+      "Coatings | Industrial & Protective": 0.3
+    },
+    "PPG": {
+      "Coatings | Architectural Professional": 0.15,
+      "Coatings | Automotive OEM": 0.25,
+      "Coatings | Automotive Refinish": 0.2,
+      "Coatings | Industrial & Protective": 0.3,
+      "Coatings | Non‑Residential": 0.1
+    },
+    "RPM": {
+      "Coatings | Architectural DIY": 0.3,
+      "Coatings | Industrial & Protective": 0.4,
+      "Non‑Residential | Roofing & Building Envelope": 0.3
+    },
+    "SHW": {
+      "Coatings | Architectural DIY": 0.2,
+      "Coatings | Architectural Professional": 0.5,
+      "Coatings | Non‑Residential": 0.3
+    }
+  },
+  "Commercial Aero": {
+    "ATI": {
+      "Commercial Aero | Aero OEM": 0.75,
+      "Defense | Defense OEM": 0.25
+    },
+    "CRS": {
+      "Commercial Aero | Aero OEM": 0.8,
+      "Defense | Defense OEM": 0.2
+    },
+    "GE": {
+      "Commercial Aero | Aero OEM": 0.6,
+      "Commercial Aero | Aftermarket": 0.4
+    },
+    "HON": {
+      "Commercial Aero | Aftermarket": 0.31,
+      "Industrial | Automation": 0.28,
+      "Industrial | Test & Measurement": 0.19,
+      "Non‑Residential | Locks & Security": 0.22
+    },
+    "HWM": {
+      "Commercial Aero | Aero OEM": 0.9,
+      "Commercial Aero | Aftermarket": 0.1
+    },
+    "TDG": {
+      "Commercial Aero | Aftermarket": 1.0
+    },
+    "WWD": {
+      "Commercial Aero | Aero OEM": 0.7,
+      "Electrical & Power | Power Generation": 0.3
+    }
+  },
+  "Construction Materials": {
+    "EXP": {
+      "Construction Materials | Cement & Other": 1.0
+    },
+    "MLM": {
+      "Construction Materials | Aggregates": 0.8,
+      "Construction Materials | Cement & Other": 0.2
+    },
+    "VMC": {
+      "Construction Materials | Aggregates": 0.75,
+      "Construction Materials | Cement & Other": 0.25
+    }
+  },
+  "Defense": {
+    "AVAV": {
+      "Defense | Defense OEM": 1.0
+    },
+    "CW": {
+      "Defense | Defense OEM": 0.6,
+      "Electrical & Power | Nuclear": 0.4
+    },
+    "TXT": {
+      "Commercial Aero | Aero OEM": 0.4,
+      "Defense | Defense OEM": 0.6
+    }
+  },
+  "Distribution": {
+    "AIT": {
+      "Distribution | MRO & Safety": 1.0
+    },
+    "BLDR": {
+      "Distribution | Building Products": 1.0
+    },
+    "CNM": {
+      "Distribution | Waterworks": 1.0
+    },
+    "FAST": {
+      "Distribution | MRO & Safety": 1.0
+    },
+    "FERG": {
+      "Distribution | Plumbing & HVAC": 1.0
+    },
+    "GWW": {
+      "Distribution | MRO & Safety": 1.0
+    },
+    "POOL": {
+      "Distribution | Building Products": 1.0
+    },
+    "QXO": {
+      "Distribution | Building Products": 1.0
+    },
+    "WCC": {
+      "Distribution | Electrical": 1.0
+    }
+  },
+  "Electrical & Power": {
+    "BE": {
+      "Electrical & Power | Power Generation": 1.0
+    },
+    "BWXT": {
+      "Electrical & Power | Nuclear": 1.0
+    },
+    "CCJ": {
+      "Electrical & Power | Nuclear": 1.0
+    },
+    "EME": {
+      "Electrical & Power | Infrastructure Construction": 1.0
+    },
+    "ETN": {
+      "Commercial Aero | Aero OEM": 0.1,
+      "Electrical & Power | Datacenter Electrical & Power Distribution": 0.3,
+      "Electrical & Power | Infrastructure Construction": 0.1,
+      "Electrical & Power | Non‑Datacenter Electrical Components": 0.5
+    },
+    "FIX": {
+      "Electrical & Power | Infrastructure Construction": 1.0
+    },
+    "GEV": {
+      "Electrical & Power | Power Generation": 1.0
+    },
+    "GNRC": {
+      "Electrical & Power | Backup Power": 1.0
+    },
+    "HUBB": {
+      "Electrical & Power | Non‑Datacenter Electrical Components": 1.0
+    },
+    "LEU": {
+      "Electrical & Power | Nuclear": 1.0
+    },
+    "MIR": {
+      "Electrical & Power | Nuclear": 1.0
+    },
+    "MOD": {
+      "Electrical & Power | Datacenter Thermal Management": 0.85,
+      "Electrical & Power | Non‑Datacenter Electrical Components": 0.15
+    },
+    "NVT": {
+      "Electrical & Power | Datacenter Electrical & Power Distribution": 0.25,
+      "Electrical & Power | Datacenter Thermal Management": 0.1,
+      "Electrical & Power | Non‑Datacenter Electrical Components": 0.65
+    },
+    "OKLO": {
+      "Electrical & Power | Nuclear": 1.0
+    },
+    "PRIM": {
+      "Electrical & Power | Infrastructure Construction": 1.0
+    },
+    "PWR": {
+      "Electrical & Power | Infrastructure Construction": 1.0
+    },
+    "SMR": {
+      "Electrical & Power | Nuclear": 1.0
+    },
+    "STRL": {
+      "Electrical & Power | Infrastructure Construction": 1.0
+    },
+    "CAT": {
+      "Electrical & Power | Backup Power": 0.20,
+      "Electrical & Power | Power Generation": 0.20
+    },
+    "CMI": {
+      "Electrical & Power | Backup Power": 0.25,
+      "Electrical & Power | Power Generation": 0.35
+      },
+    "VRT": {
+      "Electrical & Power | Datacenter Electrical & Power Distribution": 0.5,
+      "Electrical & Power | Datacenter Thermal Management": 0.5
+    }
+  },
+  "HVAC": {
+    "CARR": {
+      "HVAC | Commercial HVAC": 0.35,
+      "HVAC | Residential HVAC": 0.65
+    },
+    "JCI": {
+      "HVAC | Commercial HVAC": 1.0
+    },
+    "LII": {
+      "HVAC | Commercial HVAC": 0.3,
+      "HVAC | Residential HVAC": 0.7
+    },
+    "TT": {
+      "HVAC | Commercial HVAC": 0.8,
+      "HVAC | Residential HVAC": 0.2
+    }
+  },
+  "Industrial": {
+    "AME": {
+      "Industrial | Motion & Power": 0.33,
+      "Industrial | Test & Measurement": 0.67
+    },
+    "CAT": {
+      "Industrial | Motion & Power": 0.60
+    },
+    "CMI": {
+      "Industrial | Motion & Power": 0.40
+    },
+    "CR": {
+      "Commercial Aero | Aero OEM": 0.4,
+      "Industrial | Fluid Handling": 0.6
+    },
+    "DOV": {
+      "Industrial | Automation": 0.2,
+      "Industrial | Fluid Handling": 0.4,
+      "Industrial | Motion & Power": 0.3,
+      "Industrial | Test & Measurement": 0.1
+    },
+    "FLS": {
+      "Industrial | Fluid Handling": 1.0
+    },
+    "FTV": {
+      "Industrial | Automation": 0.3,
+      "Industrial | Test & Measurement": 0.7
+    },
+    "GTES": {
+      "Industrial | Fluid Handling": 0.3,
+      "Industrial | Power Transmission": 0.7
+    },
+    "IR": {
+      "Industrial | Fluid Handling": 0.2,
+      "Industrial | Motion & Power": 0.8
+    },
+    "PH": {
+      "Commercial Aero | Aero OEM": 0.2,
+      "Industrial | Fluid Handling": 0.2,
+      "Industrial | Motion & Power": 0.6
+    },
+    "RBC": {
+      "Commercial Aero | Aero OEM": 0.3,
+      "Industrial | Power Transmission": 0.7
+    },
+    "ROK": {
+      "Industrial | Automation": 1.0
+    },
+    "RRX": {
+      "HVAC | Residential HVAC": 0.2,
+      "Industrial | Motion & Power": 0.25,
+      "Industrial | Power Transmission": 0.55
+    }
+  },
+  "Ingredients": {
+    "IFF": {
+      "Ingredients | Flavors & Fragrances": 1.0
+    },
+    "INGR": {
+      "Ingredients | Starches, Sweeteners & Texturizers": 1.0
+    }
+  },
+  "Non‑Residential": {
+    "ALLE": {
+      "Non‑Residential | Locks & Security": 1.0
+    },
+    "AYI": {
+      "Non‑Residential | Lighting": 1.0
+    },
+    "CSL": {
+      "Coatings | Industrial & Protective": 0.05,
+      "Commercial Aero | Aero OEM": 0.1,
+      "Non‑Residential | Roofing & Building Envelope": 0.85
+    },
+    "OTIS": {
+      "Non‑Residential | Elevators": 1.0
+    },
+    "VLTO": {
+      "Industrial | Test & Measurement": 0.4,
+      "Non‑Residential | Water & Flow Control": 0.6
+    },
+    "XYL": {
+      "Non‑Residential | Water & Flow Control": 1.0
+    }
+  },
+  "Packaging": {
+    "AMCR": {
+      "Packaging | Food & Beverage Packaging": 1.0
+    },
+    "AVY": {
+      "Packaging | Food & Beverage Packaging": 1.0
+    },
+    "BALL": {
+      "Packaging | Food & Beverage Packaging": 1.0
+    },
+    "CCK": {
+      "Packaging | Food & Beverage Packaging": 1.0
+    },
+    "GPK": {
+      "Packaging | Food & Beverage Packaging": 1.0
+    },
+    "IP": {
+      "Packaging | Corrugated Boxes & Paperboard": 1.0
+    },
+    "PKG": {
+      "Packaging | Corrugated Boxes & Paperboard": 1.0
+    },
+    "SW": {
+      "Packaging | Corrugated Boxes & Paperboard": 1.0
+    }
+  },
+  "Residential": {
+    "AOS": {
+      "Residential | Water Heaters": 1.0
+    },
+    "BLD": {
+      "Non‑Residential | Roofing & Building Envelope": 0.2,
+      "Residential | Insulation": 0.8
+    },
+    "DHI": {
+      "Residential | New Construction": 1.0
+    },
+    "FBIN": {
+      "Residential | Outdoor Living": 0.5,
+      "Residential | Plumbing": 0.5
+    },
+    "JHX": {
+      "Residential | Outdoor Living": 0.4,
+      "Residential | Siding": 0.6
+    },
+    "MAS": {
+      "Coatings | Architectural DIY": 0.35,
+      "Coatings | Architectural Professional": 0.15,
+      "Residential | Plumbing": 0.5
+    },
+    "MHK": {
+      "Residential | Flooring": 1.0
+    },
+    "OC": {
+      "Residential | Insulation": 0.4,
+      "Residential | Roofing & Siding": 0.6
+    },
+    "PNR": {
+      "Non‑Residential | Water & Flow Control": 0.5,
+      "Residential | Outdoor Living": 0.5
+    },
+    "SWK": {
+      "Residential | Tools": 1.0
+    },
+    "TREX": {
+      "Residential | Outdoor Living": 1.0
+    }
+  },
+  "Services": {
+    "CLH": {
+      "Services | Waste": 1.0
+    },
+    "ECL": {
+      "Services | Other Industrial Services": 1.0
+    },
+    "RSG": {
+      "Services | Waste": 1.0
+    },
+    "WCN": {
+      "Services | Waste": 1.0
+    },
+    "TTEK": {
+      "Services | Consulting & Engineering": 1.0
+    },
+    "WM": {
+      "Services | Waste": 1.0
+    }
+  }
+}
